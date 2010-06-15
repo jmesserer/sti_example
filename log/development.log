@@ -1,0 +1,100 @@
+  [4;36;1mCycle Load (3.0ms)[0m   [0;1mSELECT * FROM "cycles" [0m
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:27:36) [GET]
+  [4;36;1mCycle Load (2.0ms)[0m   [0;1mSELECT * FROM "cycles" [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+
+ActionView::TemplateError (undefined method `motorcycle_path' for #<ActionView::Base:0x949d21c>) on line #13 of app/views/cycles/index.html.erb:
+10:   <tr>
+11:     <td><%=h cycle.name %></td>
+12:     <td><%=h cycle.type %></td>
+13:     <td><%= link_to 'Show', cycle %></td>
+14:     <td><%= link_to 'Edit', edit_cycle_path(cycle) %></td>
+15:     <td><%= link_to 'Destroy', cycle, :confirm => 'Are you sure?', :method => :delete %></td>
+16:   </tr>
+
+    app/views/cycles/index.html.erb:13
+    app/views/cycles/index.html.erb:9:in `each'
+    app/views/cycles/index.html.erb:9
+    app/controllers/cycles_controller.rb:7:in `index'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/AppWin32/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (97.0ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:28:37) [GET]
+  [4;35;1mCycle Load (1.0ms)[0m   [0mSELECT * FROM "cycles" [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 195ms (View: 162, DB: 1) | 200 OK [http://localhost/cycles]
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:30:32) [GET]
+  [4;36;1mPowered Load (0.0ms)[0m   [0;1mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' ) ) [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 12ms (View: 2, DB: 0) | 200 OK [http://localhost/cycles]
+  [4;36;1mPowered Load (1.0ms)[0m   [0;1mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' ) ) [0m
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:33:57) [GET]
+  [4;35;1mCycle Load (1.0ms)[0m   [0mSELECT * FROM "cycles" [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 27ms (View: 7, DB: 1) | 200 OK [http://localhost/cycles]
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:36:03) [GET]
+  [4;36;1mCycle Load (1.0ms)[0m   [0;1mSELECT * FROM "cycles" [0m
+  [4;35;1mPowered Load (1.0ms)[0m   [0mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' OR "cycles"."type" = 'Motorcycle' OR "cycles"."type" = 'Dirtbike' ) ) [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 23ms (View: 5, DB: 2) | 200 OK [http://localhost/cycles]
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:36:05) [GET]
+  [4;36;1mCycle Load (1.0ms)[0m   [0;1mSELECT * FROM "cycles" [0m
+  [4;35;1mPowered Load (1.0ms)[0m   [0mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' OR "cycles"."type" = 'Motorcycle' OR "cycles"."type" = 'Dirtbike' ) ) [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 36ms (View: 7, DB: 2) | 200 OK [http://localhost/cycles]
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:36:17) [GET]
+  [4;36;1mCycle Load (1.0ms)[0m   [0;1mSELECT * FROM "cycles" [0m
+  [4;35;1mPowered Load (0.0ms)[0m   [0mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' OR "cycles"."type" = 'Motorcycle' OR "cycles"."type" = 'Dirtbike' ) ) [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 24ms (View: 6, DB: 1) | 200 OK [http://localhost/cycles]
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:36:37) [GET]
+  [4;36;1mPowered Load (1.0ms)[0m   [0;1mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' ) ) [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 24ms (View: 2, DB: 1) | 200 OK [http://localhost/cycles]
+
+
+Processing CyclesController#index (for 127.0.0.1 at 2010-06-15 08:36:43) [GET]
+  [4;35;1mDirtbike Load (2.0ms)[0m   [0mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Dirtbike' ) ) [0m
+  [4;36;1mPowered Load (1.0ms)[0m   [0;1mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' OR "cycles"."type" = 'Dirtbike' ) ) [0m
+Rendering template within layouts/cycles
+Rendering cycles/index
+Completed in 33ms (View: 8, DB: 3) | 200 OK [http://localhost/cycles]
+  [4;35;1mDirtbike Load (1.0ms)[0m   [0mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Dirtbike' ) ) [0m
+  [4;36;1mPowered Load (0.0ms)[0m   [0;1mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' ) ) [0m
+  [4;35;1mDirtbike Load (2.0ms)[0m   [0mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Dirtbike' ) ) [0m
+  [4;36;1mPowered Load (2.0ms)[0m   [0;1mSELECT * FROM "cycles" WHERE ( ("cycles"."type" = 'Powered' OR "cycles"."type" = 'Dirtbike' ) ) [0m

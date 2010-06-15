@@ -1,0 +1,2 @@
+class Scooter < Nonpowered
+end

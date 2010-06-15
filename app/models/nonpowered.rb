@@ -1,0 +1,2 @@
+class Nonpowered < Cycle
+end

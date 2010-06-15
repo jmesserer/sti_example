@@ -1,0 +1,2 @@
+class Powered < Cycle
+end

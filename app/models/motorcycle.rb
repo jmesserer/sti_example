@@ -1,0 +1,2 @@
+class Motorcycle < Powered
+end

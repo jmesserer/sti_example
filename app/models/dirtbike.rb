@@ -1,0 +1,2 @@
+class Dirtbike < Powered
+end

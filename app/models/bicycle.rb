@@ -1,0 +1,2 @@
+class Bicycle < Nonpowered
+end
